@@ -1,0 +1,40 @@
+﻿{
+  "name": "com.ireshsampath.unity-assets.easy-tcp",
+  "version": "1.0.0",
+  "displayName": "EasyTCP",
+  "description": "EasyTCP is a Unity asset designed to simplify **TCP communication** (Transmission Control Protocol) within your game or application. It provides easy-to-use classes for setting up TCP **Server** and **Client** functionality.",
+  "unity": "6000.2",
+  "unityRelease": "6f2",
+  "documentationUrl": "https://github.com/IreshSampath/unity-assets-easy-tcp/blob/main/README.md",
+  "changelogUrl": "https://example.com/easy-tcp-changelog.html",
+  "licensesUrl": "https://example.com/easy-tcp-licensing.html",
+  "dependencies": {
+    "com.unity.textmeshpro": "5.0.0",
+    "com.ireshsampath.unity-assets.easy-ui-console": "https://github.com/IreshSampath/unity-assets-easy-ui-console.git"
+  },
+  "samples": [
+    {
+      "displayName": "EasyTCP Server Sample",
+      "description": "An example scene demonstrating how to set up and use the EasyTCP Server to listen for client connections and handle data transfer.",
+      "path": "Samples~/Server Sample"
+    },
+    {
+      "displayName": "EasyTCP Client Sample",
+      "description": "An example scene demonstrating how to set up and use the EasyTCP Client to connect to a server and send/receive data.",
+      "path": "Samples~/Client Sample"
+    }
+  ],
+  "keywords": [
+    "tcp",
+    "networking",
+    "network",
+    "communication",
+    "server",
+    "client"
+  ],
+  "author": {
+    "name": "Iresh Sampath",
+    "email": "ireshsampath@gmail.com",
+    "url": "https://www.linkedin.com/in/ireshsampath/"
+  }
+}
