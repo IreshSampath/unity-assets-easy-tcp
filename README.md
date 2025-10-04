@@ -1,2 +1,123 @@
-# unity-assets-easy-tcp
+# 🔌 EasyTCP for Unity
 
+![Unity](https://img.shields.io/badge/Unity-2022.3%2B-green.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux%20%7C%20Android%20%7C%20iOS-lightgrey.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
+---
+
+## 🚀 Overview
+
+**EasyTCP** is a lightweight Unity networking package designed to simplify **TCP communication** between applications.  
+It provides both **Server** and **Client** functionality using **background threads** and **async/await**, ensuring smooth performance without blocking the Unity main thread.
+
+Perfect for:
+
+- ✅ **Multiplayer prototyping**
+- ✅ **Remote debugging / telemetry**
+- ✅ **Cross-app communication (PC ↔ Mobile ↔ Embedded)**
+- ✅ **IoT/game integrations**
+
+---
+
+## 📦 Installation
+
+### Option A — Install via Unity Package Manager (Git URL)
+
+1. Open **Unity → Window → Package Manager**
+2. Click **+** → **Add package from Git URL**
+3. Paste:
+   https://github.com/IreshSampath/unity-assets-easy-tcp.git
+4. Click **Install**
+5. Click Import → Samples → Server Sample or Client Sample.
+6. Click **+** → **Add package from Git URL**
+7. Paste:
+   https://github.com/IreshSampath/unity-assets-easy-ui-console.git
+8. Click **Install**
+9. Click Import → Samples → EasyUIConsole Sample
+
+---
+
+## 🧰 Quick Start
+
+### ✅ Server Setup → Check the "TCPServerHandler.cs"
+
+```csharp
+// Receive messages from clients
+void OnEnable()
+{
+    TCPServer.OnMessageReceived += ReceiveMessage;
+}
+
+void ReceiveMessage(int id, string name, string msg)
+{
+    EasyUIConsoleManager.Instance.EasyHiglight($"{id} {name} {msg}");
+}
+
+// Send to all connected clients
+TCPServer.Instance.SendMessageToAllClients("Hello Clients!");
+
+// Send to a specific client
+TCPServer.Instance.SendMessageToClient(clientId, "Private Message");
+```
+
+### ✅ Client Setup → Check the "TCPClientHandler.cs"
+
+```csharp
+// Receive messages from server
+void OnEnable()
+{
+    TCPServer.OnMessageReceived += ReceiveMessage;
+}
+
+void ReceiveMessage(string msg)
+{
+    EasyUIConsoleManager.Instance.EasyHiglight(msg);
+}
+
+// Send messages to server
+TCPClient.Instance.SendMessageToServer("Hello Server!");
+
+// Connect to the server
+TCPClient.Instance.ConnectServer();
+
+// Disconnect when done
+TCPClient.Instance.DisconnectServer();
+```
+
+---
+
+## 🧪 Samples Included
+
+| Sample                  | Description                                                       |
+| ----------------------- | ----------------------------------------------------------------- |
+| ✅ EasyTCP Server Sample | Demonstrates accepting multiple clients and broadcasting messages |
+| ✅ EasyTCP Client Sample | Shows how to connect, send, and listen for messages               |
+
+---
+
+## ⚙️ Technical Details
+
+| Feature                  | Implementation                            |
+| ------------------------ | ----------------------------------------- |
+| Threading Model          | Background Threads + Async/Await          |
+| Communication            | TCP (Transmission Control Protocol)       |
+| Encoding                 | UTF-8 (string-based messaging)            |
+| Supported Platforms      | **Windows / Mac / Linux / Android / iOS** |
+| UI Dependency (Optional) | EasyUIConsole (for visual debug logs)     |
+
+---
+
+## 📜 License
+This project is licensed under the MIT License — free for commercial and personal use.
+
+---
+
+## 🙏 Thank You
+Thanks for using EasyTCP!
+- Feel free to contribute, report bugs, or request new features.
+
+---
+
+## 👤 Author
+Iresh Sampath 🔗 [LinkedIn Profile](https://www.linkedin.com/in/ireshsampath/)
