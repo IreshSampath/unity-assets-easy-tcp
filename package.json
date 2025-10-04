@@ -18,12 +18,12 @@
     {
       "displayName": "EasyTCP Server Sample",
       "description": "An example scene demonstrating how to set up and use the EasyTCP Server to listen for client connections and handle data transfer.",
-      "path": "Samples~/Server Sample"
+      "path": "Samples~/Sample 1"
     },
     {
       "displayName": "EasyTCP Client Sample",
       "description": "An example scene demonstrating how to set up and use the EasyTCP Client to connect to a server and send/receive data.",
-      "path": "Samples~/Client Sample"
+      "path": "Samples~/Sample 2"
     }
   ],
   "keywords": [
