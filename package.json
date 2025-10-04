@@ -10,7 +10,7 @@
   "licensesUrl": "https://example.com/easy-tcp-licensing.html",
   "dependencies": {
     "com.unity.textmeshpro": "5.0.0",
-    "com.ireshsampath.unity-assets.easy-ui-console": "https://github.com/IreshSampath/unity-assets-easy-ui-console.git#1.2.1"
+    "com.ireshsampath.unity-assets.easy-ui-console": "1.2.1"
   },
   "samples": [
     {
