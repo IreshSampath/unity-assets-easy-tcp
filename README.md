@@ -40,6 +40,14 @@ Perfect for:
 
 ## 🧰 Quick Start
 
+### ✅ Check Samples 
+
+1. Open the TCP Server scene or the TCP Client scene.
+2. Check the Handlers scripts (TCPServerHandler.cs/TCPClientHandler.cs).
+3. Server-side, IP is any, and Port 5000 is already set up.
+4. Client-side, Need to save Server IP and Port
+
+
 ### ✅ Server Setup → Check the "TCPServerHandler.cs"
 
 ```csharp
@@ -64,6 +72,16 @@ TCPServer.Instance.SendMessageToClient(clientId, "Private Message");
 ### ✅ Client Setup → Check the "TCPClientHandler.cs"
 
 ```csharp
+//Need to save Server IP and Port
+PlayerPrefs.SetString("ServerIP", ipAddress.ToString());
+PlayerPrefs.SetInt("Port", portNumber);
+
+// Connect to the server
+TCPClient.Instance.ConnectServer();
+
+// Disconnect when done
+TCPClient.Instance.DisconnectServer();
+
 // Receive messages from server
 void OnEnable()
 {
@@ -78,11 +96,7 @@ void ReceiveMessage(string msg)
 // Send messages to server
 TCPClient.Instance.SendMessageToServer("Hello Server!");
 
-// Connect to the server
-TCPClient.Instance.ConnectServer();
 
-// Disconnect when done
-TCPClient.Instance.DisconnectServer();
 ```
 
 ---
