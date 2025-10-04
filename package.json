@@ -1,6 +1,6 @@
 ﻿{
   "name": "com.ireshsampath.unity-assets.easy-tcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "EasyTCP",
   "description": "EasyTCP is a Unity asset designed to simplify **TCP communication** (Transmission Control Protocol) within your game or application. It provides easy-to-use classes for setting up TCP **Server** and **Client** functionality.",
   "unity": "6000.2",
@@ -12,7 +12,7 @@
     "com.unity.textmeshpro": "5.0.0"
   },
   "gitDependencies": {
-  "com.ireshsampath.unity-assets.easy-ui-console": "https://github.com/IreshSampath/unity-assets-easy-ui-console.git#1.2.1"
+  "com.ireshsampath.unity-assets.easy-ui-console": "https://github.com/IreshSampath/unity-assets-easy-ui-console.git"
 	},
   "samples": [
     {
