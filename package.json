@@ -12,7 +12,7 @@
     "com.unity.textmeshpro": "5.0.0"
   },
   "gitDependencies": {
-  "com.ireshsampath.unity-assets.easy-ui-console": "https://github.com/IreshSampath/unity-assets-easy-ui-console.git"
+  "com.ireshsampath.unity-assets.easy-ui-console": "https://github.com/IreshSampath/unity-assets-easy-ui-console.git#1.2.1"
 	},
   "samples": [
     {
