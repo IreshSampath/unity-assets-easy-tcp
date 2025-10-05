@@ -98,6 +98,27 @@ TCPClient.Instance.SendMessageToServer("Hello Server!");
 
 
 ```
+---
+
+⚠️ **IMPORTANT: READ BEFORE CONNECTING!**
+
+To avoid connection failures, make sure:
+
+✅ **Server and Client are on the SAME NETWORK**  
+    • Connected to the same Wi-Fi / LAN router  
+    • Hotspot / corporate networks may block local access
+
+✅ **Firewall is NOT Blocking Your App (Windows Users)**  
+    • Disable Firewall temporarily, or  
+    • Add an Allow Rule for your TCP app
+
+✅ **Router Must Allow Device-to-Device Communication**  
+    • Some routers block internal ports — change to a home network if needed
+
+✅ **Double-check IP & Port Values**  
+    • A single typo can stop the connection!
+
+🟢 **Once all of the above are ✅, you’re good to go!**
 
 ---
 
