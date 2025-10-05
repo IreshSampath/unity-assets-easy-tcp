@@ -18,6 +18,18 @@ Perfect for:
 - ✅ **Cross-app communication (PC ↔ Mobile ↔ Embedded)**
 - ✅ **IoT/game integrations**
 
+
+---
+
+## 🎮 EasyTCP Demo (Download & Play)
+
+Want to see EasyTCP in action?  
+Download and test the demo builds here:
+
+👉 **https://gameartgames.itch.io/easytcp-demo**
+
+[![EasyTCP Demo](https://img.shields.io/badge/Play_on-Itch.io-orange?logo=itchdotio)](https://gameartgames.itch.io/easytcp-demo)
+
 ---
 
 ## 📦 Installation
